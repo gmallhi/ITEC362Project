@@ -34,5 +34,9 @@ nav a {
 }
 /* https://www.youtube.com/watch?v=-Yw9gBHE60E This is what i used for inspiration and help as i was confused on some parts */
 
-
-
+nav .logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-top: -8.5%;
+}
