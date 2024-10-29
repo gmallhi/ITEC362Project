@@ -40,3 +40,20 @@ nav .logo {
     margin-right: auto;
     margin-top: -8.5%;
 }
+
+/* Add this CSS to style the footer */
+footer {
+    background-color: #d3d3d3; /* Light gray background */
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Add padding for spacing */
+    
+}
+
+footer p {
+    font-family: 'Georgia', serif; /* Serif font for a classic look */
+    font-size: 1.1em; /* Slightly larger font size */
+    font-weight: bold; /* Bold text */
+    color: #333; /* Dark text color */
+    margin: 0; /* Remove default margin */
+}
+
