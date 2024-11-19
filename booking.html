@@ -2,73 +2,135 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZDKX9BF7QB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ZDKX9BF7QB');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZDKX9BF7QB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ZDKX9BF7QB');
+    </script>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gurpal Singh">
     <meta name="description" content="Detailing Website">
     <title>GM Detailing - Booking</title>
+    <script src="script.js"></script>
+    <style>
+        /* Embedded CSS for Main Content and Form */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #ececec;
+        }
+
+        main {
+            background-color: #6b4a3e;
+            color: white;
+            border-radius: 10px;
+            margin: 20px auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 1200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+            margin-right: 20px;
+            vertical-align: top;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input, form select {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #e0e0e0;
+        }
+
+        form input[type="submit"] {
+            background-color: #ffc107;
+            color: #333;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #e0a800;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #5a3f33;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-
-    
-    <header>
-        <h1>GM Detailing</h1>
-        <nav>
-            <a href="index.html"><img src="https://img.freepik.com/premium-vector/car-detailing-logo_387795-196.jpg" alt="GM Detailing Logo" class="logo" width="200" height="150"></a>
-            <a href="index.html">Home</a> |
-            <a href="features.html">Detailing Packages</a> |
-            <a href="booking.html">Booking</a>
+    <header style="background-color: #d4af91; padding: 15px 0; text-align: center; border-bottom: 2px solid #6b4a3e;">
+        <h1 style="margin: 0; font-size: 2.5rem; font-family: 'Georgia', serif;">GM Detailing</h1>
+        <nav style="margin-top: 10px;">
+            <a href="index.html" style="text-decoration: none; color: #333; font-weight: bold; margin: 0 15px;">Home</a> |
+            <a href="features.html" style="text-decoration: none; color: #333; font-weight: bold; margin: 0 15px;">Detailing Packages</a> |
+            <a href="booking.html" style="text-decoration: none; color: #333; font-weight: bold; margin: 0 15px;">Booking</a>
         </nav>
     </header>
 
-   
     <main>
-        <h2>Ready to get your car detailed?</h2>
-        <p>Booking an appointment with GMallhi detailing is quick and easy.</p>
+        <h2 style="font-size: 1.8rem; margin-bottom: 10px;">Ready to get your car detailed?</h2>
+        <p style="margin-bottom: 20px; font-size: 1rem;">Booking an appointment with GMallhi detailing is quick and easy.</p>
 
-        
         <form action="#" method="post">
             <label for="first-name">First name:</label>
-            <input type="text" id="first-name" name="first-name"><br><br>
+            <input type="text" id="first-name" name="first-name">
 
             <label for="last-name">Last Name:</label>
-            <input type="text" id="last-name" name="last-name"><br><br>
+            <input type="text" id="last-name" name="last-name">
 
             <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email"><br><br>
+            <input type="email" id="email" name="email">
 
             <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone"><br><br>
+            <input type="tel" id="phone" name="phone">
 
             <label for="package">Choose Your Package:</label>
             <select id="package" name="package">
                 <option value="essential">Essential Detailing Package - $85</option>
                 <option value="essential-plus">Essential Plus Detailing Package - $115</option>
                 <option value="pro">Pro Detailing Package - $200</option>
-            </select><br><br>
+            </select>
 
             <label for="date">Pick a Date:</label>
-            <input type="date" id="date" name="date"><br><br>
+            <input type="date" id="date" name="date">
 
             <input type="submit" value="Submit">
         </form>
 
-        <p>After you submit your form, you will receive a confirmation email with your appointment details. Thank you for choosing GMallhi detailing! We look forward to giving your car the best care possible!</p>
+        <p style="margin-top: 20px;">After you submit your form, you will receive a confirmation email with your appointment details. Thank you for choosing GMallhi detailing! We look forward to giving your car the best care possible!</p>
     </main>
 
-    
     <footer>
         <p>Copyright © 2024 Cervantes Details | All Rights Reserved | Website by: GMallhi corp</p>
     </footer>
-
 </body>
 </html>
+
+
