@@ -1,2 +1,133 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ececec;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Page Container */
+.page-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+.site-header {
+    background-color: #d4af91;
+    text-align: center;
+    padding: 15px 0;
+    font-family: 'Georgia', serif;
+    border-bottom: 2px solid #6b4a3e;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #6b4a3e;
+}
+
+/* Main Content Styles */
+.main-content {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #6b4a3e; /* Brown background */
+    color: white; /* White text for better contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.hero-section .main-img {
+    display: block;
+    margin: 15px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#about-section .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ffc107; /* Gold color for headings */
+}
+
+.about-section .about-text {
+    margin: 0 auto 20px;
+    max-width: 700px; /* Optional: limit text width for better readability */
+}
+
+.benefits-section .benefits-intro {
+    margin: 0 auto 20px;
+    max-width: 700px;
+}
+
+.benefits-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 auto;
+    display: inline-block; /* Ensures ul is treated as inline content for centering */
+    text-align: left; /* Keep list items aligned left within centered ul */
+}
+
+.benefits-list li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.benefits-list li::before {
+    content: "•";
+    color: #ffc107; /* Gold bullet points */
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+/* Footer Styles */
+.site-footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #5a3f33;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+.site-footer .footer-text {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-content {
+        width: 95%;
+    }
+
+    .about-text, .benefits-list {
+        max-width: 100%; /* Expand content to fit smaller screens */
+    }
+}
+
+
 
 
